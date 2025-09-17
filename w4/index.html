@@ -1,0 +1,33 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Instant Greeting Generator</title>
+    </head>
+    <body>
+
+        <!-- Main heading for the page -->
+         <h1>Welcome to the Greeting Generator</h1>
+
+         <!-- From element that wraps the input and submit button -->
+         <!-- The form has a unidue ID so we can target it with JavaScript -->
+          <form id="greetingForm">
+
+            <!-- Label for the text input field -->
+             <label for="username">Enter Name:</label>
+
+             <!-- Text input where the user types their name  -->
+             <!-- 'required' makes sure the user can't submit an empty field -->
+              <input type="text" id="username" name="username" required>
+
+              <!-- Submit button that triggers the form submission -->
+               <button type="submit">Submit</button>
+          </form>
+          <!-- Empty element that will display the greeting message -->
+          <!-- It has a unique ID so JavaScript can update its content -->
+           <h2 id="greetingOutput"></h2>
+
+           <!-- Link to the external JavaScript file that will handle form logic -->
+            <script src="app.js"></script>
+    </body>
+  </html>
